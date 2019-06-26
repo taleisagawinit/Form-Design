@@ -1,0 +1,52 @@
+html {box-sizing:border-box:}
+*, *::before, *::after {box-sizing: inherit;}
+
+body {
+    background-color: rgb(106, 161, 208);
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+    height: 1000px;
+}
+
+.columns {
+    display: inline-flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 10px;
+    width: 30%;
+}
+
+textarea, input, select {
+    border: 2px solid white;
+    background-color: rgb(106, 161, 208);
+    margin-bottom: 20px;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 3px;
+}
+
+::placeholder {
+    color: rgb(80, 109, 135);
+    font-style: italic;
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: none;
+    border-color: rgb(60,108,151);
+}
